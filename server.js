@@ -23,7 +23,10 @@ connectDB();
 
 // CORS configuration
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || "https://rabbit-frontend-sigma.vercel.app/",
+  origin: [
+    "http://localhost:5173",
+    process.env.CORS_ORIGIN || "https://rabbit-frontend-sigma.vercel.app",
+  ],
   credentials: true,
   optionsSuccessStatus: 200,
 };
@@ -56,7 +59,6 @@ app.use("/api/cart", cartRoutes);
 
 const orderRoutes = require("./routes/orderRoutes");
 app.use("/api/cart/order", orderRoutes);
-
 
 // Root endpoint
 app.get("/api", (req, res) => {
