@@ -22,11 +22,20 @@ connectDB();
 // }
 
 // CORS configuration
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://rabbit-frontend-sigma.vercel.app",
+];
 const corsOptions = {
-  origin: [
-    "http://localhost:5173",
-    process.env.CORS_ORIGIN || "https://rabbit-frontend-sigma.vercel.app",
-  ],
+  origin: function (origin, callback) {
+    // allow requests with no origin (e.g., mobile apps, curl)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("CORS policy: Not allowed by CORS"));
+    }
+  },
   credentials: true,
   optionsSuccessStatus: 200,
 };
