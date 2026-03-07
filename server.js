@@ -23,7 +23,7 @@ connectDB();
 
 // CORS configuration
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || "http://localhost:5173",
+  origin: process.env.CORS_ORIGIN || "https://rabbit-frontend-hz1jhiu3x-rabiul-hosens-projects.vercel.app",
   credentials: true,
   optionsSuccessStatus: 200,
 };
