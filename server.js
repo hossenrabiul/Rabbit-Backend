@@ -23,7 +23,7 @@ connectDB();
 
 // CORS configuration
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || "https://rabbit-frontend-hz1jhiu3x-rabiul-hosens-projects.vercel.app",
+  origin: process.env.CORS_ORIGIN || "https://rabbit-frontend-sigma.vercel.app",
   credentials: true,
   optionsSuccessStatus: 200,
 };
