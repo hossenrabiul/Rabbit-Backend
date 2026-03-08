@@ -6,14 +6,8 @@ const { ErrorResponse } = require("../middleware/errorHandler");
 // @route   GET /api/products
 // @access  Public
 exports.getAllProducts = asyncHandler(async (req, res, next) => {
-  const {
-    category,
-    search,
-    page = 1,
-    limit = 12,
-    sort = "-createdAt",
-  } = req.query;
-  console.log(req.query)
+  const { category, search, page = 1, limit, sort = "-createdAt" } = req.query;
+  // console.log(req.query)
   // Build filter object
   const filter = { isActive: true };
 
@@ -32,7 +26,7 @@ exports.getAllProducts = asyncHandler(async (req, res, next) => {
   const pageNum = parseInt(page, 10);
   const pageSize = parseInt(limit, 10);
   const skip = (pageNum - 1) * pageSize;
-
+  // console.log(skip, limit);
   // Execute query
   const products = await Product.find(filter)
     .sort(sort)
