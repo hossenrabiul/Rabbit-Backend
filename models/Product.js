@@ -8,7 +8,7 @@ const productSchema = new mongoose.Schema(
       trim: true,
       maxlength: [100, "Product name cannot exceed 100 characters"],
     },
-    description: {
+    kamiz: {
       type: String,
       // required: [true, 'Please add a product description'],
       maxlength: [500, "Description cannot exceed 500 characters"],
@@ -16,7 +16,7 @@ const productSchema = new mongoose.Schema(
     pant: {
       type: String,
     },
-    quality: {
+    dupatta: {
       type: String,
     },
     price: {
@@ -58,8 +58,8 @@ const productSchema = new mongoose.Schema(
         type: String,
       },
     ],
-    size : {
-      type : String,
+    size: {
+      type: String,
     },
     rating: {
       type: Number,
