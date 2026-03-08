@@ -7,7 +7,7 @@ dotenv.config();
 
 const seedProducts = [
   {
-    name: "pakistani inspired 3ps 💁‍♀️",
+    name: "pakistani inspired 2ps 💁‍♀️",
     dupatta: "",
     pant: "shiny cotton",
     kamiz: "kamiz-georjhet with inner",
@@ -28,7 +28,7 @@ const seedProducts = [
     // size: "size-Free 46/48",
   },
   {
-    name: "pakistani inspired 3ps 💁‍♀️",
+    name: "pakistani inspired 2ps 💁‍♀️",
     dupatta: "Dupatta-Cotton",
     pant: "pant-cotton( unstitched )",
     kamiz: "kamiz-Cotton",
@@ -49,7 +49,7 @@ const seedProducts = [
     size: "size-Free 46/48",
   },
   {
-    name: "pakistani inspired 3ps 💁‍♀️",
+    name: "pakistani inspired 2ps 💁‍♀️",
     dupatta: "Dupatta-Cotta",
     pant: "pant-cotton",
     kamiz: "kamiz-Cotton",
@@ -70,7 +70,7 @@ const seedProducts = [
     size: "size-Free 46/48",
   },
   {
-    name: "pakistani inspired 3ps 💁‍♀️",
+    name: "pakistani inspired 2ps 💁‍♀️",
     dupatta: "Dupatta-Cotta",
     pant: "pant-cotton",
     kamiz: "kamiz-Cotton",
@@ -112,7 +112,7 @@ const seedProducts = [
     size: "size-Free 46/48",
   },
   {
-    name: "jamdani 3ps",
+    name: "jamdani 2ps",
     kamiz: "kamiz-Cotton with jamdani work",
     pant: "",
     dupatta: "Dupatta-cotta",
@@ -150,7 +150,7 @@ const seedProducts = [
     size: "size-Free",
   },
   {
-    name: "pakistani inspired 3ps",
+    name: "pakistani inspired 2ps",
     kamiz: " kamiz-cotton",
     pant: "",
     dupatta: "dupatta-cotta",
@@ -167,7 +167,7 @@ const seedProducts = [
     size: "size-Free",
   },
   {
-    name: "pakostani inspired 3ps",
+    name: "pakistani inspired 2ps",
     kamiz: "kamiz-cotton",
     pant: "",
     dupatta: "dupatta-soft moslin",
@@ -188,7 +188,7 @@ const seedProducts = [
     size: "size-Free",
   },
   {
-    name: "jamdani 3ps",
+    name: "jamdani 2ps",
     kamiz: "kamiz-Cotton with jamdani work",
     pant: "",
     dupatta: "dupatta-cotta",
@@ -219,16 +219,14 @@ const seedProducts = [
     // category: "Toys",
     image:
       "https://i.ibb.co.com/8nBkBLWp/Whats-App-Image-2026-03-05-at-10-35-10-PM.jpg",
-    images: [
-    
-    ],
+    images: [],
     rating: 4.4,
     reviews: 234,
     tags: ["toys", "collectible", "action-figures"],
     size: "size-Free 46/48",
   },
   {
-    name: "pakistani inspired 3ps",
+    name: "pakistani inspired 2ps",
     kamiz: "kamiz-Cotton",
     pant: "",
     dupatta: "dupatta-cotta",
@@ -238,13 +236,130 @@ const seedProducts = [
     // category: "Toys",
     image:
       "https://i.ibb.co.com/k6Vw4Lrq/Whats-App-Image-2026-03-05-at-10-33-52-PM.jpg",
+    images: [],
+    rating: 4.4,
+    reviews: 234,
+    tags: ["toys", "collectible", "action-figures"],
+    size: "size-Free",
+  },
+  {
+    name: "pakistani inspired 2ps",
+    kamiz: "",
+    pant: "",
+    dupatta: "",
+    price: 1600,
+    // discountPrice: 29.99,
+    // stock: 38,
+    // category: "Toys",
+    image:
+      "https://i.ibb.co.com/svqTRJqJ/Whats-App-Image-2026-03-05-at-8-25-25-PM.jpg",
     images: [
-    
+      "https://i.ibb.co.com/tTHSd0Vj/Whats-App-Image-2026-03-05-at-8-23-08-PM-1.jpg",
+      "https://i.ibb.co.com/fzFVv6pX/Whats-App-Image-2026-03-05-at-8-23-08-PM.jpg",
+      "https://i.ibb.co.com/vxW8RNc0/Whats-App-Image-2026-03-05-at-8-23-09-PM.jpg",
+    ],
+    rating: 4.4,
+    reviews: 234,
+    tags: ["toys", "collectible", "action-figures"],
+    // size: "size-Free",
+  },
+  {
+    name: "Pakistani inspired 3ps",
+    kamiz: "Kamiz-Cotton",
+    pant: "Pant-Cotton( Unstitched )",
+    dupatta: "Dupatta-Cotton",
+    price: 1600,
+    // discountPrice: 29.99,
+    // stock: 38,
+    // category: "Toys",
+    image:
+      "https://i.ibb.co.com/zVhrwj0w/Whats-App-Image-2026-03-08-at-5-28-18-PM.jpg",
+    images: [
+      "https://i.ibb.co.com/7x4ptzvc/Whats-App-Image-2026-03-08-at-5-28-19-PM-1.jpg",
+      "https://i.ibb.co.com/tp6S9ZT1/Whats-App-Image-2026-03-08-at-5-28-19-PM.jpg",
     ],
     rating: 4.4,
     reviews: 234,
     tags: ["toys", "collectible", "action-figures"],
     size: "size-Free",
+  },
+  {
+    name: "Pakistani inspired 3ps",
+    kamiz: "Kamiz-Cotton",
+    pant: "Pant-Cotton( Unstitched )",
+    dupatta: "Dupatta-Cotton",
+    price: 1200,
+    // discountPrice: 29.99,
+    // stock: 38,
+    // category: "Toys",
+    image:
+      "https://i.ibb.co.com/b55hD4JQ/Whats-App-Image-2026-03-08-at-6-53-54-PM-1.jpg",
+    images: [
+      "https://i.ibb.co.com/0jx9S6Jk/Whats-App-Image-2026-03-08-at-6-53-54-PM.jpg",
+    ],
+    rating: 4.4,
+    reviews: 234,
+    tags: ["toys", "collectible", "action-figures"],
+    size: "size-Free",
+  },
+  {
+    name: "Pakistani inspired 3ps",
+    kamiz: "Kamiz-Cotton",
+    pant: "Pant-Cotton",
+    dupatta: "Dupatta-Cotta",
+    price: 1700,
+    // discountPrice: 29.99,
+    // stock: 38,
+    // category: "Toys",
+    image:
+      "https://i.ibb.co.com/hJTjQwpP/Whats-App-Image-2026-03-05-at-7-57-48-PM-1.jpg",
+    images: [
+      "https://i.ibb.co.com/zkhS190/Whats-App-Image-2026-03-05-at-7-57-48-PM.jpg",
+    ],
+    rating: 4.4,
+    reviews: 234,
+    tags: ["toys", "collectible", "action-figures"],
+    size: "size-Free 46/48",
+  },
+  {
+    name: "Pakistani inspired 3ps",
+    kamiz: "Kamiz-Cotton",
+    pant: "Pant-Cotton",
+    dupatta: "Dupatta-Cotta",
+    price: 1700,
+    // discountPrice: 29.99,
+    // stock: 38,
+    // category: "Toys",
+    image:
+      "https://i.ibb.co.com/PsbQBjMJ/Whats-App-Image-2026-03-05-at-7-56-57-PM-2.jpg",
+    images: [
+      "https://i.ibb.co.com/Hfd4f6pk/Whats-App-Image-2026-03-05-at-7-56-57-PM-1.jpg",
+      "https://i.ibb.co.com/TDvX1ZW3/Whats-App-Image-2026-03-05-at-7-56-58-PM.jpg",
+      "https://i.ibb.co.com/5hWVbCGm/Whats-App-Image-2026-03-05-at-7-56-59-PM.jpg",
+    ],
+    rating: 4.4,
+    reviews: 234,
+    tags: ["toys", "collectible", "action-figures"],
+    size: "size-Free 46/48",
+  },
+  {
+    name: "Pakistani inspired 3ps",
+    kamiz: "Kamiz-soft silk",
+    pant: "pant-soft silk( unstitched )",
+    dupatta: "Dupatta-Cotta",
+    price: 1400,
+    // discountPrice: 29.99,
+    // stock: 38,
+    // category: "Toys",
+    image:
+      "https://i.ibb.co.com/Y4QjHSq5/Whats-App-Image-2026-03-08-at-10-35-40-PM.jpg",
+    images: [
+      
+    ],
+    rating: 4.4,
+    reviews: 234,
+    tags: ["toys", "collectible", "action-figures"],
+    // size: "size-Free 46/48",
   },
 ];
 
