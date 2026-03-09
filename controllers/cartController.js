@@ -40,7 +40,7 @@ exports.addToCart = async (req, res) => {
     }
 
     // ============ FIND OR CREATE CART ============
-    let cart = await Cart.findOne({ userId });
+    let cart = await Cart.findOne({ userId, isActive : true });
 
     if (!cart) {
       cart = new Cart({
@@ -59,13 +59,13 @@ exports.addToCart = async (req, res) => {
     if (existingItemIndex > -1) {
       // Item exists - increase quantity
       const newQuantity = cart.items[existingItemIndex].quantity + quantity;
-
-      if (product.stock < newQuantity) {
-        return res.status(400).json({
-          success: false,
-          message: `Only ${product.stock} items available. Already have ${cart.items[existingItemIndex].quantity} in cart`,
-        });
-      }
+      console.log(newQuantity);
+      // if (product.stock < newQuantity) {
+      //   return res.status(400).json({
+      //     success: false,
+      //     message: `Only ${product.stock} items available. Already have ${cart.items[existingItemIndex].quantity} in cart`,
+      //   });
+      // }
 
       cart.items[existingItemIndex].quantity = newQuantity;
     } else {
