@@ -32,12 +32,12 @@ exports.addToCart = async (req, res) => {
     }
     // console.log("product", product);
     // ============ CHECK STOCK ============
-    if (product.stock < quantity) {
-      return res.status(400).json({
-        success: false,
-        message: `Only ${product.stock} items available in stock`,
-      });
-    }
+    // if (product.stock < quantity) {
+    //   return res.status(400).json({
+    //     success: false,
+    //     message: `Only ${product.stock} items available in stock`,
+    //   });
+    // }
 
     // ============ FIND OR CREATE CART ============
     let cart = await Cart.findOne({ userId, isActive : true });
@@ -59,7 +59,7 @@ exports.addToCart = async (req, res) => {
     if (existingItemIndex > -1) {
       // Item exists - increase quantity
       const newQuantity = cart.items[existingItemIndex].quantity + quantity;
-      console.log(newQuantity);
+      // console.log(newQuantity);
       // if (product.stock < newQuantity) {
       //   return res.status(400).json({
       //     success: false,
