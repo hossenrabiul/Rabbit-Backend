@@ -28,7 +28,7 @@ const seedProducts = [
     // size: "size-Free 46/48",
   },
   {
-    name: "pakistani inspired 2ps 💁‍♀️",
+    name: "pakistani inspired 3ps 💁‍♀️",
     dupatta: "Dupatta-Cotton",
     pant: "pant-cotton( unstitched )",
     kamiz: "kamiz-Cotton",
@@ -49,7 +49,7 @@ const seedProducts = [
     size: "size-Free 46/48",
   },
   {
-    name: "pakistani inspired 2ps 💁‍♀️",
+    name: "pakistani inspired 3ps 💁‍♀️",
     dupatta: "Dupatta-Cotta",
     pant: "pant-cotton",
     kamiz: "kamiz-Cotton",
@@ -167,7 +167,7 @@ const seedProducts = [
     size: "size-Free",
   },
   {
-    name: "pakistani inspired 2ps",
+    name: "pakistani inspired 3ps",
     kamiz: "kamiz-cotton",
     pant: "",
     dupatta: "dupatta-soft moslin",
@@ -284,10 +284,10 @@ const seedProducts = [
     size: "size-Free",
   },
   {
-    name: "Pakistani inspired 3ps",
+    name: "Pakistani inspired 2ps",
     kamiz: "Kamiz-Cotton",
-    pant: "Pant-Cotton( Unstitched )",
-    dupatta: "Dupatta-Cotton",
+    pant: "",
+    dupatta: "Dupatta-Cotta",
     price: 1200,
     // discountPrice: 29.99,
     // stock: 38,
@@ -304,17 +304,19 @@ const seedProducts = [
   },
   {
     name: "Pakistani inspired 3ps",
-    kamiz: "Kamiz-Cotton",
-    pant: "Pant-Cotton",
-    dupatta: "Dupatta-Cotta",
-    price: 1700,
+    kamiz: "",
+    pant: "",
+    dupatta: "",
+    price: 1550,
     // discountPrice: 29.99,
     // stock: 38,
     // category: "Toys",
     image:
-      "https://i.ibb.co.com/hJTjQwpP/Whats-App-Image-2026-03-05-at-7-57-48-PM-1.jpg",
+      "https://i.ibb.co.com/XZRXpPLt/Whats-App-Image-2026-03-09-at-1-22-47-AM.jpg",
+
     images: [
       "https://i.ibb.co.com/zkhS190/Whats-App-Image-2026-03-05-at-7-57-48-PM.jpg",
+      "https://i.ibb.co.com/hJTjQwpP/Whats-App-Image-2026-03-05-at-7-57-48-PM-1.jpg",
     ],
     rating: 4.4,
     reviews: 234,
@@ -353,9 +355,7 @@ const seedProducts = [
     // category: "Toys",
     image:
       "https://i.ibb.co.com/Y4QjHSq5/Whats-App-Image-2026-03-08-at-10-35-40-PM.jpg",
-    images: [
-      
-    ],
+    images: [],
     rating: 4.4,
     reviews: 234,
     tags: ["toys", "collectible", "action-figures"],
