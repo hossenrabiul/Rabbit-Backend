@@ -2,13 +2,14 @@ const Product = require("../models/Product");
 const Cart = require("../models/Cart");
 
 exports.addToCart = async (req, res) => {
+  console.log(req.body)
   try {
     const userId = req.user.id; // From auth middleware
     const { productId, quantity = 1 } = req.body;
 
     // ============ VALIDATION ============
     if (!productId) {
-      return res.status(400).json({
+      return res.status(401).json({
         success: false,
         message: "Product ID is required",
       });
